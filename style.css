@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-X: hidden;
+    scroll-behavior: smooth;
+} 
+body {
+    background-color: #F5F4F4;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rot {
+    animation: rotate360 2s linear infinite;
+    border-radius: 50%; 
+    border: 1px solid #01A977; 
+    width: 70px;
+    height: 70px;
+  
+    
+}
+.rot img{
+    /* padding:5px; */
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    width: 50px;
+}
+.mai{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.ven {
+    background-image: linear-gradient(to right, #C18F11, #A68841, #5576CF, #5576CF, #5576CF, #5576CF, #5576CF);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.venu {
+    background-image: url("img/Venue-1-38edfbf0.png");
+    justify-content: center;
+    height: 500px;
+    width: 95%;
+    border-radius: 0 20px 20px 20px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.gi img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+}
+
+.hi:hover {
+    background-color: green;
+    color: #fff;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.hii:hover {
+    background-color: rgb(9, 9, 145);
+    color: #fff;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.joy {
+    background-image: linear-gradient(to bottom left, #8D475C, #122251, #122251, #122251);
+    font-weight: bold;
+    color: #fff;
+    height: auto;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: marquee 8s linear infinite;
+}
+
+.marquee {
+    /* gap: 20px; */
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee span:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.marquee span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.marquee span:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+.marquee span:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+
+.marquee span:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+
+.marquee span:nth-of-type(6) {
+    animation-delay: 1s;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+footer {
+    background-color: rgb(9, 9, 145);
+    width: 100%;
+    height: 80px;
+    color: #fff;
+}
+
+.vertical{
+    border-left: 3px solid #fff;
+    /* text-decoration: underline; */
+    height: 400px;
+    color: #fff;
+    margin-top: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.vert{
+    justify-content: center;
+    margin:0 auto;
+    width: 90%;
+    height: auto;
+    position: fiex;
+
+
+}
+.hit:hover {
+    transition: .9s;
+    transform: rotate(20deg);
+}
+
+.hitt:hover {
+    transition: .8s;
+    transform: rotate(-20deg);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 10px gray;
+    background-color: #F5F4F4;
+}
+main section .spek {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+figure img{width: 250px;
+    height: 250px;}
+    @media(max-width:680px){
+        .hit,.hitt{
+            display: none;
+        }
+    }
+@media (min-width: 600px) {
+    main section .spek {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+}
+
+@media (min-width: 900px) {
+    main section .spek {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    main section .spek {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    main section .spek {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
